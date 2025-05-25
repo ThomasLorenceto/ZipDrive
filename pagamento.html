@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pagamento.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="titulo-pagamento">
+            <h1>Pagamento</h1>
+            <a href="home.html">
+                <img class="arrow" src="src/close.png" alt="">
+            </a>
+        </div>
+        <div class="logo">
+            <h1>ZipDrive</h1>
+        </div>
+        <div class="imagens">
+            <img style="width: 125px; height: 69px;" src="src/card2.png" class="img1">
+            <img style="width: 125px; height: 69px;" src="src/card.png" class="img2">
+        </div>
+
+        <div class="form-pagamento">
+            <div style="margin-bottom: 32px;" class="nome-cartao">
+                <label for="nome">Titular do Cartão</label>
+                <input type="text" class="nome" placeholder="Ex: 'Livia B Silva'">
+            </div>
+            <div style="margin-bottom: 32px;" class="num-card">
+                    <label for="input-cartao">Número do Cartão</label>
+                    <input type="number" class="input-cartao" placeholder="XXXX XXXX XXXX XXXX">
+            </div>
+            <div class="input-group">
+                <div class="data-input">
+                    <p>Data de Exp.</p>
+                    <input class="input-date small-input" type="date" placeholder="dd/mm">
+                </div>
+                <div class="input-cvv">
+                    <p>CVV</p>
+                    <input class="cvv-input small-input" type="number" placeholder="XXX">
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <p>Total</p>
+            <p>R$140,00</p>
+        </div>
+        <div class="botoes">
+            <a href="pagamento2.html"><div class="btn-confirm">Confirmar</div></a>
+            <a href="pagamento2.html"><div class="btn-pagarentrega">Pagar na Entrega</div></a>
+        </div>
+    </div>
+</body>
+</html>

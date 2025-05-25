@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercedes S600</title>
+  <link rel="stylesheet" href="styles/mercedes-s600.css" />
+  <script src="scripts/mercedes-s600.js" defer></script>
+</head>
+<body>
+  <div class="app-container">
+    <div class="section-one">
+      <a href="home.html"><img src="src/arrow-right.png" alt="Back"></a>
+      <p>Aluguel</p> 
+    </div>
+    <div>Mercedes-Benz AMG B63 2015 4.0 Automático</div>
+    <div class="carousel-container">
+      <button class="carousel-button left" onclick="scrollCarousel(-1)">&#10094;</button>
+      <div class="carousel" id="carousel">
+        <img src="src/AMG/1.jpg" alt="Imagem 1" />
+        <img src="src/AMG/2.jpg" alt="Imagem 2" />
+        <img src="src/AMG/3.jpg" alt="Imagem 3" />
+        <img src="src/AMG/4.jpg" alt="Imagem 4" />
+        <img src="src/AMG/5.jpg" alt="Imagem 5" />
+        <img src="src/AMG/6.jpg" alt="Imagem 6" />
+      </div>
+      <button class="carousel-button right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+    <div class="descricao">
+        <p>Com motor 4.0 V8 Biturbo, a G63 entrega desempenho esportivo com o visual imponente do clássico off-road. Interior luxuoso com acabamento premium, tecnologias de ponta e conforto absoluto. Ideal para quem busca exclusividade, potência e presença em qualquer terreno. </p>
+    </div>
+    <div class="informações">
+        <img src="src/vehicle information 1.png" alt="">
+        <img style="position: absolute; top: 2.6vw; left: 11vw;" src="src/engine.png" alt="">
+        <img style="position: absolute; top: 4.5vw; left: 1.4vw; width: 17px;" src="src/engine-oil.png" alt="">
+    </div>
+    <div class="moldura">
+        <div class="text-1">
+            <img src="src/check.png" alt="">
+            <p>Cobetura por dano e roubo com franquia</p>
+        </div>
+        <div class="text-1">
+            <img src="src/check.png" alt="">
+            <p>Driver Adicional gratuíto</p>
+        </div>
+        <div class="text-1">
+            <img src="src/check.png" alt="">
+            <p>Cancelamento grátis até 24 horas antes <br> de retirar o carro</p>
+        </div>
+    </div>
+    <div class="button-alugar">
+        <a href="pagamento.html">
+            <div class="alugar-button">Alugar</div>
+        </a>
+    </div>
+    <div class="navigation-bar">
+      <a href="home.html">
+        <div class="navigation-options">
+          <img src="src/home.png" alt="home button">
+          <p>Home</p>
+        </div>
+      </a>
+      <a href="catalogo.html">
+        <div class="navigation-options">
+          <img src="src/catalogo.png" alt="Catalog Button">
+          <p>Catálogo</p>
+        </div>
+      </a>
+      <a href="devoluçao.html">
+        <div class="navigation-options">
+          <img src="src/restock.png" alt="Restock Button">
+          <p>Devolução</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="navigation-options">
+          <img src="src/chat.png" alt="Chat Button">
+          <p>Chat</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="fullscreen-overlay" id="fullscreenOverlay">
+    <span class="close-button" onclick="closeFullscreen()">&#10005;</span>
+    <img id="fullscreenImage" src="" alt="Imagem em destaque" />
+  </div>
+</body>
+</html>

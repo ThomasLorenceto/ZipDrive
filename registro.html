@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipDrive Login</title>
+    <link rel="stylesheet" href="styles/registro.css">
+    <script src="scripts/registro.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="first-section">
+            <a href="entrar.html">
+                <img class="arrow" src="src/seta-direita.png" alt="">
+            </a>
+            <p class="create-acount-text">Crie uma Conta</p>
+        </div>
+        <div class="profile-photo">
+            <label for="inputFoto" id="fotoPerfilContainer">
+                <img id="fotoPerfil" src="src/picture profile.png" alt="Foto de Perfil" width="150">
+                <img class="camera-icon" src="src/camera.png" alt="Ícone da Câmera">
+            </label>
+            <input style="display: none; cursor: pointer; border-radius: 50%;" type="file" id="inputFoto" accept="image/*">
+        </div>
+        <p class="text-inputs">Conclua este processo para começar</p>
+        <div class="inputs-registro">
+            <div class="input-box">
+                <p>Primeiro Nome</p>
+                <input type="text" class="nome" placeholder="Nome">
+            </div>
+            <div class="input-box">
+                <p>Último Nome</p>
+                <input type="text" class="nome" placeholder="Sobrenome">
+            </div>
+            <div class="input-box">
+                <p>E-mail</p>
+                <input type="email" class="email" placeholder="exemplo@gmail.com">
+            </div>
+            <div class="input-box">
+                <p>Senha</p>
+                <input type="password" class="emai" placeholder="Mínimo 8 caracteres">
+            </div>
+        </div>
+        <a href="home.html">
+            <div class="login-button">Login</div>
+        </a>
+        <div class="remember-forgot">
+            <div class="checkbox-text-container">
+                <input type="checkbox" id="termos">
+                <label for="termos">
+                Certifico que tenho 18 anos ou mais e
+                concordo com os Termos de Uso e Política de Privacidade
+                </label>
+        </div>
+  </div>
+</body>
+</html>
