@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-container {
+      width: 428px;      /* largura padrão iPhone X/11/12 */
+      height: 926px;     /* altura padrão iPhone X/11/12 */
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      background-color: #ffffff;
+      overflow: hidden;
+      position: relative;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .img-entrar{
+      position: relative;
+      display: flex;
+      width: 300px;
+      flex-shrink: 0;
+      margin-top: 50%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .text h1{
+      color: var(--Primary8, #DF2E4D);
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      text-align: center;
+      line-height: 34.5px;
+      margin-top: 40px;
+    }
+
+    .text p {
+      color: var(--shade5, #343233);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22.5px;
+    }
+
+    .registrar-button {
+      color: var(--shade5, #343233);
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22.5px;
+      border-radius: 32px;
+      background: var(--Secondary8, #DF2E4D);
+      padding: 16px 0px;
+      color: var(--neutral1, #FFF);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22.5px;
+      margin-top: 100px;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+  
+    .entrar-button {
+      font-family: Poppins;
+      display: flex;
+      padding: 16px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      border-radius: 32px;
+      border: 1.5px solid var(--Secondary8, #DF2E4D);
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      margin-top: 24px;
+    }
+
+    .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 13px;
+    margin-top: 24px;
+    align-items: center;
+    text-align: center;
+    line-height: 21px;
+    padding: 0px 50px;
+ }
+
+ .remember-forgot label input {
+    accent-color: #DF2E4D;
+    margin-right: 5px;
+ }
+
+ .remember-forgot a {
+    text-decoration: none;
+    color: #DF2E4D;
+    font-weight: 500;
+ }
+
+    .remember-forgot a:hover{
+        text-decoration: underline;
+    }
+
+    .registrar-button:hover{
+      background: var(--Secondary8, #B50322);
+      transition: 0.3s;
+      scale: 1.02;
+    }
+
+    .entrar-button:hover{
+      background: var(--Secondary8, #DF2E4D);
+      color: white;
+      transition: 0.3s;
+      scale: 1.02;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    @media (max-width: 375px) {
+  .img-entrar {
+    width: 90%;
+    margin-top: 40%;
+  }
+  .text h1 {
+    font-size: 16px;
+    margin-top: 25px;
+    line-height: 28px;
+  }
+  .text p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .registrar-button,
+  .entrar-button {
+    font-size: 13px;
+    padding: 12px 0;
+  }
+  .remember-forgot {
+    padding: 0 20px;
+    font-size: 11px;
+  }
+}
+
+/* Para telas até 320px (ex: smartphones menores) */
+@media (max-width: 320px) {
+  .img-entrar {
+    width: 95%;
+    margin-top: 35%;
+  }
+  .text h1 {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 25px;
+  }
+  .text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .registrar-button,
+  .entrar-button {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .remember-forgot {
+    padding: 0 15px;
+    font-size: 10px;
+  }
+}

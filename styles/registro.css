@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-container {
+      width: 428px;      /* largura padrão iPhone X/11/12 */
+      height: 926px;     /* altura padrão iPhone X/11/12 */
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      background-color: #ffffff;
+      overflow: hidden;
+      position: relative;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .first-section{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .first-section p{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -20px;
+    }
+
+    .arrow {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin-left: 32px;
+        margin-top: 35px;
+    }
+
+    .create-acount-text{
+        color: var(--shade6, #0B090A);
+        font-family: Poppins;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28.5px;
+    }
+
+    .profile-photo{
+        position: relative;
+        display: flex;
+        width: 118px;
+        height: 118px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 38px;
+    }
+
+    .camera-icon{
+        position: absolute;
+        left: 90px;
+        top: 90px;
+
+    }
+
+    .text-inputs{
+        position: relative;
+        top: 60px;
+        left: 8px;
+    }
+
+    .inputs-registro {
+        color: var(--shade6, #747373);
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+        position: relative;
+        top: 50px;
+    }
+
+    .input-box{
+        width: 362px;
+        padding: 16px 132px 16px 8px;
+        align-items: flex-start;
+        gap: 8px;
+
+    }
+
+    .input-box input {
+    width: 362px;
+    height: 100%;
+    border: 2px solid #DF2E4D;
+    font-size: 16px;
+    color: #747373;
+    outline: none;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: -20px;
+    position: relative;
+    margin-top: 5px;
+    }
+
+.login-button{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 16px 0px;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 32px;
+    background: var(--Secondary8, #DF2E4D);
+    color: white;
+    font-family: Poppins;
+    top: 80px;
+}
+
+.login-button:hover{
+      background: var(--Secondary8, #B50322);
+      transition: 0.3s;
+      scale: 1.02;
+    }
+
+   a {
+    color: white;
+      text-decoration: none;
+      color: inherit
+    }
+
+ #fotoPerfilContainer {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#fotoPerfil {
+  max-width: 118px;
+  max-height: 118px;
+  object-fit: cover;  /* Ajusta o corte da imagem */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  transition: 0.3s ease;
+}
+
+#fotoPerfilContainer:hover #fotoPerfil {
+  opacity: 0.8; /* Efeito visual ao passar o mouse */
+}
+
+.text-inputs {
+    position: relative;
+    width: 285px;
+    height: 25px;
+    flex-shrink: 0;
+    color: var(--shade4, #5C5B5C);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+
+ .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 13px;
+    top: 70px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+ }
+
+ .remember-forgot label input {
+    accent-color: #DF2E4D;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+ }
+
+ .remember-forgot a {
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.5px;
+ }
+
+ .remember-forgot a:hover{
+    text-decoration: underline;
+ }
+
+ .checkbox-text-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #5C5B5C;
+}
+
+.checkbox-text-container input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #DF2E4D;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 428px) {
+  .app-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 15px;
+  }
+
+  .arrow {
+    margin-left: 16px;
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .first-section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .create-acount-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .profile-photo {
+    width: 96px;
+    height: 96px;
+    top: 24px;
+  }
+
+  #fotoPerfil {
+    max-width: 96px;
+    max-height: 96px;
+  }
+
+  .camera-icon {
+    left: 72px;
+    top: 72px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .text-inputs {
+    top: 30px;
+    left: 0;
+    width: 100%;
+  }
+
+  .input-box {
+    width: 100%;
+    padding: 12px 8px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  .login-button {
+    top: 40px;
+    padding: 12px 0;
+    font-size: 14px;
+  }
+
+  .remember-forgot {
+    top: 40px;
+    font-size: 12px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .checkbox-text-container {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+
+  .checkbox-text-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 8px;
+  }
+
+  .google-button {
+    font-size: 14px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .google-button img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .div-bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .div-bars p {
+    font-size: 12px;
+  }
+}

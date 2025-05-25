@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-container {
+      width: 428px;      /* largura padrão iPhone X/11/12 */
+      height: 926px;     /* altura padrão iPhone X/11/12 */
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      background-color: #ffffff;
+      overflow: hidden;
+      position: relative;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .logo{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo h1{
+        color: var(--Primary8, #DF2E4D);
+        font-family: Poppins;
+        font-size: 18.014px;
+        font-style: normal;
+        font-weight: 700;
+        user-select: none;
+    }
+
+    .navegacao{
+        display: flex;
+        gap: 289px;
+        align-items: center;
+        user-select: none;
+    }
+
+    .navegacao img{
+        display: flex;
+        align-items: center;
+        gap: 289px;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-drag: none;
+        outline: none;
+        transition: 0.3s ease;
+    }
+
+    .navegacao img:hover{
+        transform: scale(1.02);
+    }
+
+    .menu a{
+        user-select: none;
+    }
+
+    .background-bell{
+        display: flex;
+        width: 48px;
+        height: 35px;
+        padding: 6px 11.5px 5px 11.5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: var(--Primary1, #F7CDD4);
+        user-select: none;
+    }
+
+    .background-bell:hover{
+        background: var(--Primary1, #EC8194);
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+
+    .first-section{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-top: 11.65px;
+
+    }
+
+    .search-input{
+        display: flex;
+        width: 362px;
+        height: 50px;
+        padding: 5px 5px 5px 8px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border: 2px solid var(--shade2, #AEADAD);
+    }
+
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        background: #FFF;
+    }
+
+    .search-input input {
+        color: var(--shade2, #AEADAD);
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        border: none;
+        width: 360px;
+        height: 35px;
+        font-size: 20px;
+        outline: none;
+    }
+
+    .search-input img:hover{
+        scale: 1.02;
+        transition: 0.3s;
+    }
+
+    .ad-section{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 364px;
+        height: 174px; 
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 25px;
+    }
+
+    .video-ad{
+        object-fit: cover;
+    }
+
+    .secound-section{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 25px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .veiculos-disponiveis-btn{
+        display: flex;
+        padding: 8px;
+        background-color: #DF2E4D;
+        border-radius: 4px;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22.5px;
+    }
+
+    .veiculos-disponiveis-btn:hover{
+        background-color: #B50322;
+        scale: 1.02;
+        transition: 0.3s;
+    }
+
+    a{
+        text-decoration: none;
+        outline: none;
+        user-select: none;
+    }
+
+    .verTudo-btn{
+        color: #343233;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19.5px;
+    }
+
+    .verTudo-btn:hover{
+        color: #DF2E4D;
+        scale: 1.02;
+        transition: 0.3s;
+    }
+
+    .three-section{
+        margin-top: 19px;
+    }
+
+    .three-section img:hover{
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+
+    .car-option-one{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .navigation-bar {
+  position: absolute; /* Troque de fixed para absolute */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #ddd;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.navigation-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #000;
+  transition: transform 0.3s;
+}
+
+.navigation-options img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.navigation-options:hover {
+  transform: scale(1.1);
+}
